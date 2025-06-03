@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
+.gradient-bg {
+    background: linear-gradient(135deg, #1f2937 0%, #111827 100%);
+}
+
+.card-dark {
+    background: rgba(31, 41, 55, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(75, 85, 99, 0.3);
+}
+
+.slider-thumb::-webkit-slider-thumb {
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3b82f6;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.slider-thumb::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #3b82f6;
+    cursor: pointer;
+    border: 2px solid white;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.3);
+}
+
+.upload-zone {
+    border: 2px dashed #4b5563;
+    transition: all 0.3s ease;
+}
+
+.upload-zone:hover {
+    border-color: #3b82f6;
+    background: rgba(59, 130, 246, 0.1);
+}
+
+.preview-container {
+    max-height: 500px;
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.preview-container img {
+    user-select: none;
+    -webkit-user-drag: none;
+    pointer-events: auto;
+}
+
+.preview-container {
+    cursor: zoom-in;
+    position: relative;
+}
+
+.preview-container > div {
+    position: relative;
+}
+
+.fullscreen-overlay {
+    animation: fadeIn 0.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Стили для вкладок */
+.tabs-container {
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tab-button {
+    transition: all 0.2s ease;
+}
+
+.tab-button:hover {
+    background-color: rgba(59, 130, 246, 0.1);
+}
+
+.tab-button.active {
+    color: #3b82f6;
+    border-bottom: 2px solid #3b82f6;
+}
+
+.tab-content {
+    padding: 1rem;
+}
